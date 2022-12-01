@@ -1,0 +1,23 @@
+Hello and welcome to hell.
+This'll hopefully serve as a reference for how the tileset used by the game was made.
+For a base, you'll want the blank slate tiles in tile_reference_sheet.ase, either the topleftmost one ("no tint"), or the one two to the right of that with no borders.
+There's the 8 color swatch used for the gray steel tiles directly underneath the topleftmost tile as well.
+Note the palette mask to the topright, the light blue circles indicate where on the tile the brightness of the colors should be bumped down by -1 (modifier of -1)
+Tiles larger than minitiles should likely include this dark spot.
+
+== Light and dark tiles ==
+Light and dark tiles are direct brightness/contrast shifts of the gray tiles with the following parameters.
+Obviously tweak these if your tile comes out relatively too dark/bright.
+
+=== Light ===
+# Brightness : 85
+# Contrast : 0
+
+=== Dark ===
+# Brightness: -60
+# Contrast: 20
+
+== Tile variation ==
+Note the little pattern just below "No Tint" in the tile ref sheet.
+This is how I pattern all of the normal tiles for variants. Light blue indicates tiles that should have their HSV value tweaked up a couple points and black indicates tiles that should have value tweaked down a couple points and their contrast upped slightly.
+The actual numbers for this are *arbitrary.* Use whatever looks good for your tileset.
